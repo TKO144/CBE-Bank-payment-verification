@@ -1,0 +1,6 @@
+pytesseract
+Pillow
+requests
+
+*To install it on termianl use
+    pip install pytesseract pillow requests
