@@ -17,7 +17,7 @@ def extract_transaction_id(image_path, id_prefix="TxnID:"):
 def verify_transaction(transaction_id, verification_url):
     
     try:
-        response = requests.get(f"{verification_url}?transaction_id={transaction_id}")
+        response = requests.get(f"{https://apps.cbe.com.et:100/?id=}?transaction_id={transaction_id}")
         if response.status_code == 200:
             return response.json().get("status") == "success"
         return False
